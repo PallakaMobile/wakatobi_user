@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layer_toolbar_search" />
+
+    <TextView
+        android:id="@+id/tv_search_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen100"
+        android:drawableTop="@drawable/ic_search_not_found"
+        android:src="@drawable/ic_search_not_found"
+        android:textColor="@color/colorPrimary"
+        tools:ignore="ContentDescription" />
+
+    <ps.salam.wakatobi.support.xrecyclerview.XRecyclerView
+        android:id="@+id/rv_report"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        android:overScrollMode="never"
+        android:visibility="gone" />
+</LinearLayout>

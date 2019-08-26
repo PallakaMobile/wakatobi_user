@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#385ED9</color>
+    <color name="colorSecondary">#157DA1</color>
+    <color name="colorPrimaryDark">@color/colorPrimary</color>
+    <color name="colorPrimaryPressed">#254096</color>
+    <color name="colorAccent">@color/colorPrimary</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_50">#b1ffffff</color>
+    <color name="indicator_unselected">#4D000000</color>
+    <color name="black_trans50">#6e000000</color>
+    <color name="black_trans80">#e0000000</color>
+
+    <color name="red">#ed3237</color>
+    <color name="yellow">#f1c40f</color>
+    <color name="green">#00a859</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+
+    <color name="TextTitle">#3A3E44</color>
+    <color name="TextSubtitle">#7D818B</color>
+    <color name="backgroundColor">#E8E7E7</color>
+
+
+    <!-- list类型的文本颜色 -->
+    <color name="rfab__color_text_label_item">#777777</color>
+    <!-- 背景颜色 -->
+    <color name="rfab__color_background_normal">#ffffff</color>
+    <color name="rfab__color_background_pressed">#dddddd</color>
+
+    <!-- RFAL的frame覆盖层颜色 -->
+    <color name="rfab__color_frame">#ffffff</color>
+
+    <!-- 背景阴影颜色 -->
+    <color name="rfab__color_shadow">#c6c6c6</color>
+</resources>

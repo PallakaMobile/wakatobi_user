@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "293367231577",
+    "firebase_url": "https://salam-wakatobi.firebaseio.com",
+    "project_id": "salam-wakatobi",
+    "storage_bucket": "salam-wakatobi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293367231577:android:362ee7dd6c91d223",
+        "android_client_info": {
+          "package_name": "ps.salam.wakatobi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293367231577-kamqmuaovhouh1tn8ocs3uebiivarc3m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ps.salam.wakatobi",
+            "certificate_hash": "a4d95f92629f85b587af331ee02ba1618a0129c5"
+          }
+        },
+        {
+          "client_id": "293367231577-dnq0sa98p721tbudnh0p4j2n77cp5l71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFAYG95eyPGx32Fc6fqSj_ZVB7QFpT3Io"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293367231577-dnq0sa98p721tbudnh0p4j2n77cp5l71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

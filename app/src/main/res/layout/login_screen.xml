@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layer_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        tools:context="ps.salam.wakatobi.ui.login.VLogin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/default_margin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_logo_login_top"
+                tools:ignore="ContentDescription" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/tet_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/username"
+                    android:inputType="text"
+                    android:textSize="@dimen/text_size_normal" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/tet_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/text_size_normal" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                style="@style/ButtonPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_half"
+                android:text="@string/login" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_half"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_forgot"
+                    style="@style/ButtonPrimaryOutline"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen30"
+                    android:layout_weight="0.5"
+                    android:text="@string/forgot_password" />
+
+                <View
+                    android:layout_width="@dimen/default_margin_half"
+                    android:layout_height="0dp" />
+
+                <Button
+                    android:id="@+id/btn_register"
+                    style="@style/ButtonPrimaryOutline"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen30"
+                    android:layout_weight="0.5"
+                    android:text="@string/new_register" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_half"
+                android:gravity="center"
+                android:padding="@dimen/default_margin"
+                android:text="@string/re_verification"
+                android:textColor="@color/colorPrimary" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen80"
+                android:layout_height="@dimen/dimen80"
+                android:layout_gravity="center|bottom"
+                android:src="@drawable/ic_login_footer"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_half"
+                android:gravity="center"
+                android:text="@string/footer_login"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/version_app" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

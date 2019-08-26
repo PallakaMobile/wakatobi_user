@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layer_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/default_margin">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/tet_full_name"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/full_name"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/default_margin_half"
+                android:text="@string/sex"
+                android:textColor="@color/colorPrimary" />
+
+            <RadioGroup
+                android:id="@+id/rg_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/default_margin_half"
+                android:paddingLeft="@dimen/dimen50"
+                android:paddingRight="@dimen/dimen50"
+                android:paddingTop="@dimen/default_margin_half">
+
+                <RadioButton
+                    android:id="@+id/rb_man"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_min_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/rbtn_selector_left"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/men"
+                    android:textColor="@drawable/rbtn_text_color_selector" />
+
+
+                <RadioButton
+                    android:id="@+id/rb_woman"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_min_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/rbtn_selector_right"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/women"
+                    android:textColor="@drawable/rbtn_text_color_selector" />
+            </RadioGroup>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/tet_phone"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/no_phone"
+                    android:inputType="phone" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/tet_job_name"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/job"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/tet_address"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/home_address"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ps.salam.wakatobi.widget.CustomSpinner
+                android:id="@+id/cs_province"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:cs_title="@string/province" />
+
+            <ps.salam.wakatobi.widget.CustomSpinner
+                android:id="@+id/cs_district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:cs_title="@string/district_or_city" />
+
+            <ps.salam.wakatobi.widget.CustomSpinner
+                android:id="@+id/cs_sub_district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cs_title="@string/sub_district_or_village" />
+
+            <ps.salam.wakatobi.widget.CustomSpinner
+                android:id="@+id/cs_village"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cs_title="@string/village_or_dusun" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tet_rt"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:hint="@string/rt"
+                        android:inputType="number" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:layout_width="@dimen/default_margin"
+                    android:layout_height="0dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tet_rw"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/rw"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_update_profile"
+                style="@style/ButtonPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:text="@string/save" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

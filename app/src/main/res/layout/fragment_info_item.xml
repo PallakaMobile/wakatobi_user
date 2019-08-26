@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root_item_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen4"
+    android:layout_marginTop="@dimen/dimen4"
+    android:background="@color/white">
+
+    <ps.salam.wakatobi.widget.RoundedImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="@dimen/dimen36"
+        android:layout_height="@dimen/dimen36"
+        android:layout_marginLeft="@dimen/default_margin_half"
+        android:layout_marginStart="@dimen/default_margin_half"
+        android:layout_marginTop="@dimen/default_margin_half"
+        android:src="@drawable/ic_default_profile" />
+
+    <TextView
+        android:id="@+id/tv_instance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_title_info"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_toEndOf="@+id/iv_profile"
+        android:layout_toRightOf="@+id/iv_profile"
+        android:text="@string/sample"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_medium" />
+
+    <TextView
+        android:id="@+id/tv_date_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_instance"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:drawablePadding="@dimen/default_margin_half"
+        android:drawableStart="@drawable/ic_calendar"
+        android:text="@string/sample"
+        android:textColor="@color/TextSubtitle"
+        android:textSize="@dimen/text_size_small"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/tv_title_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_profile"
+        android:layout_marginLeft="@dimen/default_margin_half"
+        android:layout_marginStart="@dimen/default_margin_half"
+        android:layout_marginTop="@dimen/default_margin_half"
+        android:text="@string/sample" />
+
+    <TextView
+        android:id="@+id/tv_desc_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title_info"
+        android:layout_marginLeft="@dimen/default_margin_half"
+        android:layout_marginStart="@dimen/default_margin_half"
+        android:text="@string/sample"
+        android:textColor="@color/TextSubtitle"
+        android:textSize="@dimen/text_size_medium" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen180"
+        android:layout_below="@+id/tv_desc_info">
+
+        <ImageView
+            android:id="@+id/iv_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/default_margin_half"
+            android:background="@color/black_trans80"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/dimen40"
+            android:layout_height="@dimen/dimen40"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progressbar" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layer_toolbar" />
+
+    <ps.salam.wakatobi.widget.CustomSpinner
+        android:id="@+id/cs_report_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin_half"
+        app:cs_title="@string/choose_report_status" />
+
+    <ps.salam.wakatobi.support.xrecyclerview.XRecyclerView
+        android:id="@+id/rv_report_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor" />
+
+    <TextView
+        android:id="@+id/tv_not_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:src="@drawable/ic_search_not_found"
+        android:text="@string/data_not_available"
+        android:textColor="@color/TextSubtitle"
+        android:textSize="@dimen/text_size_extra_large"
+        android:visibility="gone" />
+</LinearLayout>

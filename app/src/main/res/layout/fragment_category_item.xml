@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_category"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen5"
+    android:layout_marginRight="@dimen/dimen5"
+    android:background="?android:selectableItemBackground"
+    app:cardCornerRadius="@dimen/dimen5"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/default_margin_half">
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_label"
+        android:drawablePadding="@dimen/default_margin_half" />
+</android.support.v7.widget.CardView>

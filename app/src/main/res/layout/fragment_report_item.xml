@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen4"
+    android:layout_marginTop="@dimen/dimen4"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6dp">
+
+        <ps.salam.wakatobi.widget.RoundedImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="@dimen/dimen36"
+            android:layout_height="@dimen/dimen36"
+            android:layout_marginLeft="@dimen/default_margin_half"
+            android:layout_marginStart="@dimen/default_margin_half" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_margin_half"
+            android:layout_marginStart="@dimen/default_margin_half"
+            android:layout_toEndOf="@+id/iv_profile"
+            android:layout_toRightOf="@+id/iv_profile"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_medium"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/tv_title_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_marginLeft="@dimen/default_margin_half"
+            android:layout_marginStart="@dimen/default_margin_half"
+            android:layout_toEndOf="@+id/iv_profile"
+            android:layout_toRightOf="@+id/iv_profile"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/tv_date_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/default_margin_half"
+            android:layout_marginRight="@dimen/default_margin_half"
+            android:drawableLeft="@drawable/ic_calendar"
+            android:drawablePadding="@dimen/default_margin_half"
+            android:drawableStart="@drawable/ic_calendar"
+            android:gravity="center"
+            android:paddingEnd="@dimen/dimen5"
+            android:paddingRight="@dimen/dimen5"
+            android:textColor="@color/TextSubtitle"
+            android:textSize="@dimen/text_size_small"
+            tools:ignore="RelativeOverlap,RtlSymmetry" />
+
+
+        <TextView
+            android:id="@+id/tv_desc_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_profile"
+            android:layout_marginLeft="@dimen/default_margin_half"
+            android:layout_marginStart="@dimen/default_margin_half"
+            android:layout_marginTop="@dimen/default_margin_half"
+            android:maxLines="1"
+            android:textColor="@color/TextSubtitle" />
+
+        <FrameLayout
+            android:id="@+id/fl_image_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_desc_report"
+            android:layout_marginTop="@dimen/default_margin_half">
+
+            <ImageView
+                android:id="@+id/iv_image_report"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen180"
+                android:background="@color/black_trans80"
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/dimen40"
+                android:layout_height="@dimen/dimen40"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/progressbar" />
+
+            <ImageView
+                android:id="@+id/iv_status_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/default_margin"
+                tools:ignore="ContentDescription" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_location_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fl_image_report"
+            android:layout_marginBottom="@dimen/default_margin_half"
+            android:layout_marginLeft="@dimen/default_margin_half"
+            android:layout_marginStart="@dimen/default_margin_half"
+            android:layout_marginTop="@dimen/default_margin_half"
+            android:textColor="@color/TextSubtitle"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/tv_count_social"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/fl_image_report"
+            android:layout_marginBottom="@dimen/default_margin_half"
+            android:layout_marginEnd="@dimen/default_margin_half"
+            android:layout_marginRight="@dimen/default_margin_half"
+            android:layout_marginTop="@dimen/default_margin_half"
+            android:textColor="@color/TextSubtitle"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen1"
+        android:layout_below="@+id/rv_top"
+        android:background="@color/backgroundColor" />
+
+    <TextView
+        android:id="@+id/tv_see_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:drawableLeft="@drawable/ic_location"
+        android:drawablePadding="@dimen/default_margin_half"
+        android:drawableStart="@drawable/ic_location"
+        android:gravity="center"
+        android:paddingLeft="@dimen/default_margin_half"
+        android:paddingStart="@dimen/default_margin_half"
+        android:paddingTop="@dimen/default_margin_half"
+        android:text="@string/see_location"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/iv_share"
+        android:layout_width="@dimen/dimen40"
+        android:layout_height="@dimen/dimen40"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/divider"
+        android:padding="@dimen/default_margin_half"
+        android:paddingEnd="@dimen/default_margin_half"
+        android:paddingLeft="@dimen/default_margin_half"
+        android:paddingRight="@dimen/default_margin_half"
+        android:paddingTop="@dimen/default_margin_half"
+        android:src="@drawable/ic_share"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/iv_comment"
+        android:layout_width="@dimen/dimen40"
+        android:layout_height="@dimen/dimen40"
+        android:layout_below="@+id/divider"
+        android:layout_toLeftOf="@+id/iv_share"
+        android:layout_toStartOf="@+id/iv_share"
+        android:padding="@dimen/default_margin_half"
+        android:paddingEnd="@dimen/default_margin_half"
+        android:paddingLeft="@dimen/default_margin_half"
+        android:paddingRight="@dimen/default_margin_half"
+        android:paddingTop="@dimen/default_margin_half"
+        android:src="@drawable/ic_comment"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/iv_like"
+        android:layout_width="@dimen/dimen40"
+        android:layout_height="@dimen/dimen40"
+        android:layout_below="@+id/divider"
+        android:layout_toLeftOf="@+id/iv_comment"
+        android:layout_toStartOf="@+id/iv_comment"
+        android:padding="@dimen/default_margin_half"
+        android:paddingEnd="@dimen/default_margin_half"
+        android:paddingLeft="@dimen/default_margin_half"
+        android:paddingRight="@dimen/default_margin_half"
+        android:paddingTop="@dimen/default_margin_half"
+        tools:ignore="ContentDescription" />
+
+
+</RelativeLayout>

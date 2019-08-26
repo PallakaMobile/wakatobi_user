@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pre_login_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ps.salam.wakatobi.ui.register.PreRegister">
+
+    <include
+        android:id="@+id/layer_toolbar"
+        layout="@layout/layer_toolbar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layer_toolbar"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/default_margin"
+        android:src="@drawable/ic_logo_login_top"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layer_toolbar"
+        android:layout_marginLeft="@dimen/dimen80"
+        android:layout_marginRight="@dimen/dimen80"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_visitor"
+            style="@style/ButtonPrimaryOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/visitor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen1"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:background="@color/TextSubtitle" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:gravity="center"
+                android:text="@string/or"
+                android:textColor="@color/TextSubtitle" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen1"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:background="@color/TextSubtitle" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_resident"
+            style="@style/ButtonPrimaryOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/resident" />
+    </LinearLayout>
+</RelativeLayout>

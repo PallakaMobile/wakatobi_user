@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ps.salam.wakatobi.support.imageslider.Tricks.InfiniteViewPager
+        android:id="@+id/daimajia_slider_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ps.salam.wakatobi.support.imageslider.Indicators.PagerIndicator
+        android:id="@+id/default_bottom_right_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/default_padding_slider"
+        android:paddingEnd="@dimen/default_padding_slider"
+        android:paddingRight="@dimen/default_padding_slider" />
+
+    <ps.salam.wakatobi.support.imageslider.Indicators.PagerIndicator
+        android:id="@+id/default_bottom_left_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/default_padding_slider"
+        android:paddingLeft="@dimen/default_padding_slider" />
+
+    <ps.salam.wakatobi.support.imageslider.Indicators.PagerIndicator
+        android:id="@+id/default_center_top_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop="@dimen/default_padding_slider" />
+
+    <ps.salam.wakatobi.support.imageslider.Indicators.PagerIndicator
+        android:id="@+id/default_center_top_right_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingEnd="@dimen/default_padding_slider"
+        android:paddingRight="@dimen/default_padding_slider"
+        android:paddingTop="@dimen/default_padding_slider" />
+
+    <ps.salam.wakatobi.support.imageslider.Indicators.PagerIndicator
+        android:id="@+id/default_center_top_left_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/default_padding_slider"
+        android:paddingStart="@dimen/default_padding_slider"
+        android:paddingTop="@dimen/default_padding_slider"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <ps.salam.wakatobi.support.imageslider.Indicators.PagerIndicator
+        android:id="@+id/default_center_bottom_indicator"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/default_bottom_right_indicator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="133dp"
+        android:gravity="center"
+        android:paddingBottom="@dimen/default_padding_slider"
+        custom:shape="oval" />
+</RelativeLayout>

@@ -1,0 +1,320 @@
+<resources>
+    <string name="version_app">Version 1.0.0</string>
+    <string name="app_name">Salam Wakatobi</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="rfab_rfal__float_convert_color_alpha">0.7</string>
+
+    <!--XrecylcerView-->
+    <string name="listview_header_hint_normal">Tarik untuk memuat ulang</string>
+    <string name="listview_header_hint_release">Lepaskan untuk mulai memuat ulang</string>
+    <string name="listview_loading">Mengambil data...</string>
+    <string name="nomore_loading">Tidak ada lagi yang dapat dimuat</string>
+    <string name="refreshing">Memuat ulang data...</string>
+    <string name="refresh_done"></string>
+    <string name="loading_done"></string>
+    <string name="listview_header_last_time">last update：</string>
+    <!---->
+
+    <!--Crop Image-->
+    <string name="crop_image_activity_title"></string>
+    <string name="crop_image_menu_rotate_left">Rotate counter clockwise</string>
+    <string name="crop_image_menu_rotate_right">Rotate</string>
+    <string name="crop_image_menu_crop">Crop</string>
+    <string name="pick_image_intent_chooser_title">Select source</string>
+
+    <string name="start">Mulai</string>
+    <string name="sample">Sample</string>
+    <string name="home">Beranda</string>
+    <string name="category">Kategori</string>
+    <string name="info">Info</string>
+    <string name="statistic">Statistik</string>
+    <string name="search_report">Cari Laporan</string>
+    <string name="report_status">Status Laporan</string>
+    <string name="edit_profile">Ubah Profil</string>
+    <string name="statistic_report">Statistik Laporan</string>
+    <string name="settings_application">Pengaturan Aplikasi</string>
+    <string name="about_app">Info Aplikasi</string>
+    <string name="take_picture">Ambil Gambar</string>
+    <string name="create_report">Buat Laporan</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+
+    <string name="login_please">Silahkan Login</string>
+    <string name="username">Email/KTP/No.Hp/NamaPengguna</string>
+    <string name="password">Password/Kata Sandi</string>
+    <string name="login">Masuk</string>
+    <string name="forgot_password">Lupa Password ?</string>
+    <string name="new_register">Daftar Baru</string>
+    <string name="re_verification">
+        <u>Verifikasi Ulang</u>
+    </string>
+    <string name="error_empty">Isi data dengan lengkap</string>
+    <string name="please_wait">Harap Tunggu ...</string>
+    <string name="banned">Maaf akun anda telah di non aktifkan</string>
+    <string name="need_verification">Lakukan verifikasi</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="no_ktp">Nomor KTP</string>
+    <string name="retype_password">Ulangi Password/Kata Sandi</string>
+    <string name="sex">Jenis Kelamin</string>
+    <string name="men">Pria</string>
+    <string name="women">Wanita</string>
+    <string name="register_account">Registrasi Akun</string>
+    <string name="email_address">Alamat Email</string>
+    <string name="no_phone">Nomor Handphone/Telepon</string>
+    <string name="job">Pekerjaan</string>
+    <string name="home_address">Alamat Domisili</string>
+    <string name="district">Kecamatan/Desa</string>
+    <string name="sub_district">Kelurahan/Dusun</string>
+    <string name="rt">RT</string>
+    <string name="rw">RW</string>
+    <string name="register">Daftar</string>
+    <string name="agreement_register">Dengan mengklik tombol daftar, berarti Anda telah menyetujui
+        persyaratan penggunaan aplikasi ini
+    </string>
+    <string name="input_verification_code">Masukkan Kode Verifikasi</string>
+    <string name="verification_message">Kode verifikasi akun Anda telah dikirim\n
+        ke alamat email yang Anda daftarkan. Silahkan salin\n
+        dan masukkan kode verifikasi untuk mengaktifkan\n
+        akun Anda.
+    </string>
+    <string name="verification_code">Kode Verifikasi</string>
+    <string name="send">Kirim</string>
+    <string name="resend_code">
+        <u>Kirim ulang kode verifikasi</u>
+    </string>
+    <string name="verification_account">Verifikasi Akun</string>
+    <string name="input_email">Masukkan Email</string>
+    <string name="resend">Kirim Ulang</string>
+    <string name="register_as">Daftar sebagai</string>
+    <string name="visitor">Pengunjung</string>
+    <string name="or">atau</string>
+    <string name="resident">Penduduk</string>
+    <string name="province">Provinsi</string>
+    <string name="city">Kota</string>
+    <string name="title_report">Judul Laporan</string>
+    <string name="report_value">Deskripsikan lebih lanjut laporan Anda dan jelaskan lokasi laporannya</string>
+    <string name="image_report">Gambar Laporan</string>
+    <string name="reset_location">Atur ulang lokasi</string>
+    <string name="send_report">Kirim Laporan</string>
+    <string name="district_or_city">Kabupaten/Kota</string>
+    <string name="sub_district_or_village">Kecamatan/Desa</string>
+    <string name="village_or_dusun">Kelurahan/Dusun</string>
+    <string name="access_location_not_allowed">Akses lokasi tidak di izinkan</string>
+    <string name="retry">Coba Lagi</string>
+    <string name="gps_disable">Gps tidak aktif</string>
+    <string name="ask_enable_gps">Aktifkan GPS ?</string>
+    <string name="settings">Pengaturan</string>
+    <string name="cancel">Batal</string>
+    <string name="cant_find_location">Tidak dapat menemukan lokasi</string>
+    <string name="location">Lokasi</string>
+    <string name="format_location_report">%1$s,%2$s,%3$s</string>
+    <string name="camera_not_allowed">Akses kamera tidak di izinkan</string>
+    <string name="choose_province">Pilih Provinsi</string>
+    <string name="name_not_valid">Nama tidak valid</string>
+    <string name="ktp_not_valid">KTP tidak valid</string>
+    <string name="password_not_valid">Minimal 6 karakter</string>
+    <string name="password_not_match">Kata sandi tidak sesuai</string>
+    <string name="email_not_valid">Email tidak valid</string>
+    <string name="phone_not_valid">No telepon tidak valid</string>
+    <string name="work_not_valid">Masukkan nama pekerjaan yang benar</string>
+    <string name="address_not_valid">Masukkan alamat yang benar</string>
+    <string name="rt_rw_not_valid">Minimal 3 karekter, misalnya 003</string>
+    <string name="id_user">id_user</string>
+    <string name="type_user">type_user</string>
+    <string name="isLogin">isLogin</string>
+    <string name="user_name">Username/Nama Pengguna</string>
+    <string name="all">Semua</string>
+    <string name="done">Selesai</string>
+    <string name="process">Proses</string>
+    <string name="undone">Belum</string>
+    <string name="reset_password_request">Permintaan Reset Password</string>
+    <string name="reset_password_description">Silahkan isi alamat email Anda agar sistem bisa\n
+        mengirim kode verifikasi permintaan reset password\n
+        untuk akun Anda.
+    </string>
+    <string name="reset_password">Setel ulang kata sandi</string>
+    <string name="see_location">Lihat lokasi</string>
+    <string name="data_not_found">Data tidak ditemukan</string>
+    <string name="count_social_format">%1$s Suka, %2$s Komentar, %3$s Dibagikan</string>
+    <string name="data_not_available">Data belum tersedia</string>
+    <string name="liked">menyukai</string>
+    <string name="comment">komentar</string>
+    <string name="report">laporan</string>
+    <string name="profile">Data Diri</string>
+    <string name="change_password">Ganti Katasandi</string>
+    <string name="change_email">Ganti Email</string>
+    <string name="information_profile">Informasi Pribadi</string>
+    <string name="old_email_address">Alamat Email Lama</string>
+    <string name="new_email_address">Alamat Email Baru</string>
+    <string name="new_email_address_repeat">Ulangi Alamat Email Baru</string>
+    <string name="old_password">Kata sandi lama</string>
+    <string name="new_password">Kata sandi baru</string>
+    <string name="new_password_repeat">Ulangi kata sandi baru</string>
+    <string name="profile_settings">Pengaturan Profil</string>
+    <string name="update">Perbaruhi</string>
+    <string name="format_5_comma">%1$s, %2$s, %3$s, %4$s, %5$s</string>
+    <string name="logout">Keluar</string>
+    <string name="like_report">Sukai Laporan</string>
+    <string name="share">Bagikan</string>
+    <string name="response_format">Tanggapan (%1$s)</string>
+    <string name="write_comment">Tulis Komentar</string>
+    <string name="detail_report">Detail Laporan</string>
+    <string name="liked_report">Laporan Disukai</string>
+    <string name="share_report">Bagikan Laporan</string>
+    <string name="no_data">Saat ini data belum tersedia</string>
+    <string name="google_maps">Google Map</string>
+    <string name="open_with">Buka dengan</string>
+    <string name="install">Pasang</string>
+    <string name="google_maps_installation">Google maps tidak tersedia, Pasang GoogleMap?</string>
+    <string name="report_time_done_skpd_format">Laporan ini telah diselesaikan oleh SKPD terkait
+        pada jam %1$s
+    </string>
+    <string name="report_time_process_skpd_format">Laporan ini telah ditindaklanjuti oleh SKPD
+        terkait pada jam %1$s
+    </string>
+    <string name="share_info">Bagikan Info</string>
+    <string name="detail_info">Detail Info</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
+    <string name="choose_source">Ambil gambar dari :</string>
+    <string name="save">Simpan</string>
+    <string name="email_not_match">Email tidak sesuai</string>
+    <string name="map_mode">Mode Peta</string>
+    <string name="mode_road_map">Mode Roadmap</string>
+    <string name="mode_satellite">Mode Satellite</string>
+    <string name="mode_hybrid">Mode Hybrid</string>
+    <string name="mode_terrain">Mode Terrain</string>
+    <string name="notification">Notifikasi</string>
+    <string name="active">Aktif</string>
+    <string name="give_rating">Berikan Rating</string>
+    <string name="give_rating_description">Berikan rating dan saran agar aplikasi ini menjadi lebih
+        baik
+    </string>
+    <string name="send_rating">Kirim Rating</string>
+    <string name="choose_report_status">Pilih Status Laporan</string>
+    <string name="not_active">Tidak Aktif</string>
+    <string name="footer_login">Pemerintah Kabupaten Wakatobi\n
+        \"Inspektorat\"
+    </string>
+    <string name="not_yet_verification">Belum Verifikasi</string>
+    <string name="not_yet_proses">Belum Proses</string>
+    <string name="reject">Ditolak</string>
+    <string name="by_category">Berdasarkan Kategori</string>
+    <string name="by_month">Berdasarkan Bulan</string>
+    <string name="count_title_format">%1$s Laporan</string>
+    <string name="finished">Terselesaikan</string>
+    <string name="on_process">Masih dalam proses</string>
+    <string name="not_yet_handle">Belum ditangani</string>
+    <string name="about_imaskot">Salam Wakatobi adalah Sarana Layanan Aduan Masyarakat Wakatobi berbasis ICT(Information Communication Technology) dimana masyarakat dapat melakukan pengaduan kepada Pemerintah secara Real Time dan pemerintah akan melakukan feedback laporan sehingga masyarakat dapat memantau laporannya.</string>
+    <string name="app_version_title">Versi Aplikasi</string>
+    <string name="app_version_content">Versi %1$s</string>
+    <string name="penanggung_jawab_title">Penanggung Jawab</string>
+    <string name="penanggung_jawab_content">Pemerintah Kabupaten Wakatobi \"Inspektorat\"</string>
+    <string name="website_title">Website</string>
+    <string name="website_content">http://www.wakatobikab.go.id/</string>
+    <string name="email_title">E-mail</string>
+    <string name="email_content">salamwakatobiapp@gmail.com</string>
+    <string name="confirm_remove_comment">Hapus Komentar ?</string>
+    <string name="delete">Hapus</string>
+    <string name="search_location">Mencari Lokasi ...</string>
+    <string name="choose_category">Pilih Kategori</string>
+    <string-array name="list_status_laporan">
+        <item>@string/not_yet_verification</item>
+        <item>@string/not_yet_proses</item>
+        <item>@string/process</item>
+        <item>@string/done</item>
+        <item>@string/reject</item>
+        <item>@string/all</item>
+    </string-array>
+</resources>

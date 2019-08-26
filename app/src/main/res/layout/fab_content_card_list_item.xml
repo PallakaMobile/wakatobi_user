@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_card_list_item_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margin"
+    android:background="@color/white"
+    android:gravity="center"
+    android:minWidth="@dimen/dimen200"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen10"
+    tools:ignore="UseCompoundDrawables">
+
+    <ImageView
+        android:id="@+id/content_card_list_item_logo_iv"
+        android:layout_width="@dimen/dimen20"
+        android:layout_height="@dimen/dimen20"
+        android:src="@mipmap/logo_icon"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/content_card_list_item_title_tv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_normal" />
+
+</LinearLayout>

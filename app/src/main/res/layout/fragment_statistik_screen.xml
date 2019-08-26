@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ns_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="false"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_statistic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColor"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/default_margin_half"
+        android:paddingLeft="@dimen/default_margin"
+        android:paddingRight="@dimen/default_margin"
+        android:paddingTop="@dimen/default_margin_half">
+
+        <RadioButton
+            android:id="@+id/rb_category"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_min_height_small"
+            android:layout_marginLeft="@dimen/default_margin_half"
+            android:layout_marginRight="@dimen/default_margin_half"
+            android:layout_weight="1"
+            android:background="@drawable/rbtn_selector_status_report"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/by_category"
+            android:textColor="@drawable/rbtn_text_color_status_selector" />
+
+
+        <RadioButton
+            android:id="@+id/rb_month"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_min_height_small"
+            android:layout_marginLeft="@dimen/default_margin_half"
+            android:layout_marginRight="@dimen/default_margin_half"
+            android:layout_weight="1"
+            android:background="@drawable/rbtn_selector_status_report"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/by_month"
+            android:textColor="@drawable/rbtn_text_color_status_selector" />
+
+    </RadioGroup>
+
+    <ps.salam.wakatobi.support.xrecyclerview.XRecyclerView
+        android:id="@+id/rv_statistic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColor" />
+</LinearLayout>

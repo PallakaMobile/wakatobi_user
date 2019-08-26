@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layer_toolbar" />
+
+    <ps.salam.wakatobi.support.xrecyclerview.XRecyclerView
+        android:id="@+id/rv_report"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor" />
+
+    <TextView
+        android:id="@+id/tv_not_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:src="@drawable/ic_search_not_found"
+        android:text="@string/data_not_available"
+        android:textColor="@color/TextSubtitle"
+        android:textSize="@dimen/text_size_extra_large"
+        android:visibility="gone" />
+</LinearLayout>
